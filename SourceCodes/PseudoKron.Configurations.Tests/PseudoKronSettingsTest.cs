@@ -16,7 +16,7 @@ namespace Aliencube.PseudoKron.Configurations.Tests
         [SetUp]
         public void Init()
         {
-            this._settings = ConfigurationManager.GetSection("pseudoKron") as PseudoKronSettings;
+            this._settings = ConfigurationManager.GetSection("pseudoKron") as IPseudoKronSettings;
         }
 
         [TearDown]

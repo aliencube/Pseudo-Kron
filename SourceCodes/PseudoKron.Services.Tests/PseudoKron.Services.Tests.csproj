@@ -53,6 +53,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -65,11 +66,22 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PseudoKronServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="PseudoKron.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PseudoKron.Configurations\PseudoKron.Configurations.csproj">
+      <Project>{0d30b4fa-b516-492f-99d0-e8006720a2e0}</Project>
+      <Name>PseudoKron.Configurations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PseudoKron.Services\PseudoKron.Services.csproj">
+      <Project>{e25c0c81-ba6f-4736-9ddc-af74977fe2ca}</Project>
+      <Name>PseudoKron.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
